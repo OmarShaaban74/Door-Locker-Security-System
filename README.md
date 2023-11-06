@@ -10,10 +10,10 @@
 
 #### 1. **Create a System Password:** Users are prompted to create a 5-digit password through the HMI_ECU. The system ensures password accuracy through a confirmation process. The validated password is stored in the EEPROM for future use.
 
-### 2. **Main Options:** Users can access the main system options through the LCD display on the HMI_ECU.
+#### 2. **Main Options:** Users can access the main system options through the LCD display on the HMI_ECU.
 
-### 3. **Open Door:** To unlock the door, users enter their password through the keypad, and the HMI_ECU sends this to the Control_ECU via UART. The system verifies the entered password with the one stored in the EEPROM. Upon a match, the door motor rotates for 15 seconds in a clockwise direction (CW) and displays a message indicating that the door is unlocking. The motor is then held for 3 seconds before rotating 15 seconds counterclockwise (A-CW), locking the door.
+#### 3. **Open Door:** To unlock the door, users enter their password through the keypad, and the HMI_ECU sends this to the Control_ECU via UART. The system verifies the entered password with the one stored in the EEPROM. Upon a match, the door motor rotates for 15 seconds in a clockwise direction (CW) and displays a message indicating that the door is unlocking. The motor is then held for 3 seconds before rotating 15 seconds counterclockwise (A-CW), locking the door.
 
-### 4. **Change Password:** Users can change the system password by entering the current password. The system verifies the entered password with the one stored in the EEPROM. Upon a match, users can proceed to create a new password as in Step 1.
+#### 4. **Change Password:** Users can change the system password by entering the current password. The system verifies the entered password with the one stored in the EEPROM. Upon a match, users can proceed to create a new password as in Step 1.
 
-### 5. **Security Measures for Incorrect Password Attempts:** If a user enters an incorrect password during door opening or password change for a total of three consecutive incorrect attempts, the system activates the Alarm System for one minute , and locks the system temporarily.
+#### 5. **Security Measures for Incorrect Password Attempts:** If a user enters an incorrect password during door opening or password change for a total of three consecutive incorrect attempts, the system activates the Alarm System for one minute , and locks the system temporarily.
